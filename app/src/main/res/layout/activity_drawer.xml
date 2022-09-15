@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EBE3F9"
+    android:orientation="vertical"
+    android:layout_gravity="start"
+    android:id="@+id/drawerView">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/drawer_menu"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="44dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/drawer_btn_AI_voice_service"
+        android:text="AI 음성 서비스"
+        android:textColor="@color/black"
+        android:background="@color/background_purple"
+        app:layout_constraintTop_toBottomOf="@+id/drawer_menu"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/drawer_btn_hospital_plan"
+        android:text="병원 일정 관리"
+        android:textColor="@color/black"
+        android:background="#D3BEF7"
+        app:layout_constraintTop_toBottomOf="@+id/drawer_btn_AI_voice_service"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/drawer_btn_medicine"
+        android:text="복용약 조회"
+        android:textColor="@color/black"
+        android:background="@color/background_purple"
+        app:layout_constraintTop_toBottomOf="@+id/drawer_btn_hospital_plan"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/drawer_btn_caregiver"
+        android:text="간병인 만족도 조사"
+        android:textColor="@color/black"
+        android:background="#D3BEF7"
+        app:layout_constraintTop_toBottomOf="@+id/drawer_btn_medicine"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/drawer_btn_mental_health"
+        android:text="정신건강 조사"
+        android:textColor="@color/black"
+        android:background="@color/background_purple"
+        app:layout_constraintTop_toBottomOf="@+id/drawer_btn_caregiver"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/drawer_btn_calendar"
+        android:text="부모님 일정 관리"
+        android:textColor="@color/black"
+        android:background="#D3BEF7"
+        app:layout_constraintTop_toBottomOf="@+id/drawer_btn_mental_health"/>
+</android.support.constraint.ConstraintLayout>
