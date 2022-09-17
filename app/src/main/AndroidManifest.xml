@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ProfileSettingActivity"
+            android:exported="false" />
+        <activity
             android:name=".HospitalPlanActivity"
             android:exported="false" />
         <activity

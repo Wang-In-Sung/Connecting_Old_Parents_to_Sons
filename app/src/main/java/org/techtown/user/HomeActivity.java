@@ -43,6 +43,7 @@ public class HomeActivity extends AppCompatActivity {
         Toolbar mytoolbar = findViewById(R.id.mytoolbar);
         setSupportActionBar(mytoolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
         //click drawer
         btn_menu = findViewById(R.id.btn_menu);
         btn_menu.setOnClickListener(new View.OnClickListener() {
@@ -156,6 +157,7 @@ public class HomeActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.logout:
+                Log.v("test", "test");
                 Toast.makeText(HomeActivity.this, "로그아웃", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
                 startActivity(intent);

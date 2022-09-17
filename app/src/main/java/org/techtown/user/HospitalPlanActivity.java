@@ -75,7 +75,7 @@ public class HospitalPlanActivity extends AppCompatActivity {
                 cha_Btn.setVisibility(View.INVISIBLE);
                 del_Btn.setVisibility(View.INVISIBLE);
                 diaryTextView.setText(String.format("%d / %d / %d", year, month + 1, dayOfMonth));
-                diaryTextView.setTextColor(Color.rgb(0x00, 0x00, 0x00));
+                contextEditText.setText("");
                 checkDay(year, month, dayOfMonth);
             }
         });
@@ -113,7 +113,7 @@ public class HospitalPlanActivity extends AppCompatActivity {
         /*drawer_btn_AI_voice_service = findViewById(R.id.drawer_btn_AI_voice_service);
         drawer_btn_medicine = findViewById(R.id.drawer_btn_medicine);
         drawer_btn_caregiver = findViewById(R.id.drawer_btn_caregiver);
-        drawer_btn_mental_health = findViewById(R.id.drawer_btn_mental_health);ㅈ뭏
+        drawer_btn_mental_health = findViewById(R.id.drawer_btn_mental_health);
         drawer_btn_calendar = findViewById(R.id.drawer_btn_calendar);*/
 
         drawer_btn_hospital_plan.setOnClickListener(new View.OnClickListener() {

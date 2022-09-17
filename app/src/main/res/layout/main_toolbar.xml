@@ -3,6 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_toolbar"
-    android:background="@color/purple_200">
+    android:id="@+id/maintoolbar"
+    android:background="@color/purple_200"
+    app:menu="@menu/menu_toolbar">
+
 </androidx.appcompat.widget.Toolbar>
