@@ -68,7 +68,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this, HospitalPlanActivity.class);
-                startActivity((intent));
+                startActivity(intent);
             }
         });
 
