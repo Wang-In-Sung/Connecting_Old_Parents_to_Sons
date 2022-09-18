@@ -27,9 +27,9 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class HomeActivity extends AppCompatActivity {
     private Button btn_hospital_plan, btn_AI_voice_service, btn_medicine,
-            btn_caregiver, btn_mental_health, btn_calendar;
+            btn_caregiver, btn_mental_health, btn_item;
     private Button drawer_btn_hospital_plan, drawer_btn_AI_voice_service, drawer_btn_medicine,
-            drawer_btn_caregiver, drawer_btn_mental_health, drawer_btn_calendar;
+            drawer_btn_caregiver, drawer_btn_mental_health, drawer_btn_item;
 
     private Button btn_menu;
     private DrawerLayout drawerLayout;
@@ -58,27 +58,64 @@ public class HomeActivity extends AppCompatActivity {
         drawerLayout.setDrawerListener(listener);
 
         drawer_btn_hospital_plan = findViewById(R.id.drawer_btn_hospital_plan);
-        /*drawer_btn_AI_voice_service = findViewById(R.id.drawer_btn_AI_voice_service);
+        /*drawer_btn_AI_voice_service = findViewById(R.id.drawer_btn_AI_voice_service);*/
         drawer_btn_medicine = findViewById(R.id.drawer_btn_medicine);
         drawer_btn_caregiver = findViewById(R.id.drawer_btn_caregiver);
         drawer_btn_mental_health = findViewById(R.id.drawer_btn_mental_health);
-        drawer_btn_calendar = findViewById(R.id.drawer_btn_calendar);*/
+        drawer_btn_item = findViewById(R.id.drawer_btn_calendar);
 
         drawer_btn_hospital_plan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.v("test", "test");
                 Intent intent = new Intent(HomeActivity.this, HospitalPlanActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        drawer_btn_item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.v("test", "test");
+                Intent intent = new Intent(HomeActivity.this, DailyActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        drawer_btn_mental_health.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.v("test", "test");
+                Intent intent = new Intent(HomeActivity.this, SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        drawer_btn_caregiver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.v("test", "test");
+                Intent intent = new Intent(HomeActivity.this, StsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        drawer_btn_medicine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.v("test", "test");
+                Intent intent = new Intent(HomeActivity.this, MedicineActivity.class);
                 startActivity(intent);
             }
         });
 
         // content
         btn_hospital_plan = findViewById(R.id.btn_hospital_plan);
-        /*btn_AI_voice_service = findViewById(R.id.btn_AI_voice_service);
+        /*btn_AI_voice_service = findViewById(R.id.btn_AI_voice_service);*/
         btn_medicine = findViewById(R.id.btn_medicine);
         btn_caregiver = findViewById(R.id.btn_caregiver);
         btn_mental_health = findViewById(R.id.btn_mental_health);
-        btn_calendar = findViewById(R.id.btn_calendar);*/
+        btn_item = findViewById(R.id.btn_calendar);
 
         btn_hospital_plan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,18 +132,19 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity((intent));
             }
         }));
-
+*/
         btn_medicine.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
+                Intent intent = new Intent(HomeActivity.this, MedicineActivity.class);
                 startActivity((intent));
             }
         }));
+
         btn_caregiver.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
+                Intent intent = new Intent(HomeActivity.this, StsActivity.class);
                 startActivity((intent));
             }
         }));
@@ -114,18 +152,18 @@ public class HomeActivity extends AppCompatActivity {
         btn_mental_health.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
+                Intent intent = new Intent(HomeActivity.this, SearchActivity.class);
                 startActivity((intent));
             }
         }));
 
-        btn_calendar.setOnClickListener((new View.OnClickListener() {
+        btn_item.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
+                Intent intent = new Intent(HomeActivity.this, DailyActivity.class);
                 startActivity((intent));
             }
-        }));*/
+        }));
     }
 
     DrawerLayout.DrawerListener listener = new DrawerLayout.DrawerListener() {

@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/quest1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1) 아무렇지도 않던 일들이 괴롭고 귀찮게 느껴졌다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q1Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q1Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q1Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q1Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/quest2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2) 먹고 싶지 않고 식욕이 없다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q2Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q2Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q2Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q2Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3) 어느 누가 도와준다 하더라도 나의 울적한 기분을 떨쳐 버릴 수 없을 것 같다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q3Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q3Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q3Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q3Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4) 무슨 일을 하던 정신을 집중하기가 힘들었다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q4Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q4Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q4Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q4Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5) 잘 지내지 못하였다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q5Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q5Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q5Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q5Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6) 상당히 우울했다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q6Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q6Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q6Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q6Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7) 모든 일들이 힘들게 느껴졌다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q7Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q7Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q7Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q7Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/quest8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8) 앞일이 암담하게 느껴졌다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q8Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q8Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q8Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q8Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9) 지금까지의 내 인생은 실패작이라는 생각이 들었다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q9Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q9Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q9Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q9Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10) 남들보다 능력이 뒤쳐진다고 생각한다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q10Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q10Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q10Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q10Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11) 잠을 설쳤다(잠을 잘 이루지 못했다)."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q11Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q11Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q11Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q11Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12) 두려움을 느꼈다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q12Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q12Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q12Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q12Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13) 평소에 비해 말수가 적었다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q13Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q13Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q13Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q13Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14) 세상에 홀로 있는 듯 한 외로움을 느꼈다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q14Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q14Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q14Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q14Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15) 불만이 많은 생활을 했다"
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q15Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q15Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q15Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q15Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16) 사람들이 나에게 차갑게 대하는 것 같았다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q16Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q16Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q16Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q16Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17) 갑자기 울음이 나왔다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q17Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q17Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q17Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q17Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18) 마음이 슬펐다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q18Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q18Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q18Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q18Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19) 사람들이 나를 싫어하는 것 같았다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q19Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q19Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q19Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q19Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quest20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20) 도무지 뭘 해 나갈 엄두가 나지 않았다."
+                android:textSize="22sp"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <RadioButton
+                    android:id="@+id/q20Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="극히 드물다 (일주일동안 1일이하)" />
+                <RadioButton
+                    android:id="@+id/q20Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="가끔 있었다 (일주일동안 1~2일)" />
+                <RadioButton
+                    android:id="@+id/q20Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="종종 있었다 (일주일동안 3~4일)" />
+                <RadioButton
+                    android:id="@+id/q20Btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="대부분 그랬다 (일주일동안 5일이상)" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/resBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="결과" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

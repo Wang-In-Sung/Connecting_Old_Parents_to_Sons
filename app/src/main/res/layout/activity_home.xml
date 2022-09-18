@@ -81,7 +81,7 @@
             android:layout_width="0dp"
             android:layout_height="140dp"
             android:background="#5E05FB"
-            android:text="일정관리"
+            android:text="생필품 체크"
             android:textSize="20dp"
             app:layout_constraintBottom_toTopOf="@id/btn_caregiver"
             app:layout_constraintLeft_toRightOf="@id/btn_mental_health"

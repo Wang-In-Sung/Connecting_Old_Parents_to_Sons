@@ -77,7 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:id="@+id/drawer_btn_calendar"
-        android:text="부모님 일정 관리"
+        android:text="생필품 체크"
         android:textColor="@color/black"
         android:drawableLeft="@drawable/ic_baseline_checklist_rtl_24"
         android:backgroundTint="#D3BEF7"
