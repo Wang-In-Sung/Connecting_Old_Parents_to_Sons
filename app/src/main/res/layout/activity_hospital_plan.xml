@@ -134,6 +134,25 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
+        <EditText
+            android:id="@+id/et_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray"
+            android:hint="테스트"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="저장"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/et_test"/>
+
         <include layout="@layout/activity_toolbar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
